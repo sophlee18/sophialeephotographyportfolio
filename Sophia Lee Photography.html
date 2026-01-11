@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Lee Photography</title>
+    <style>
+        /* --- General Setup --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        /* --- Header --- */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        p.subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* --- Photo Grid --- */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            
+            display: grid; 
+            /* Creates a responsive grid that fits as many columns as possible */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+            aspect-ratio: 1 / 1; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+
+        /* Hover Effect */
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 60px;
+            color: #888;
+            font-size: 0.8rem;
+        }
+        
+        a { 
+            color: #333; 
+            text-decoration: none; 
+            border-bottom: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+        a:hover {
+            border-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sophia Lee</h1>
+        <p class="subtitle">Photography Portfolio</p>
+    </header>
+
+    <main class="gallery-container">
+        
+        <div class="photo-card">
+            <img src="Photo4.jpeg" alt="Gallery Photo 1">
+        </div>
+        
+        <div class="photo-card">
+            <img src="Photo2.jpeg" alt="Gallery Photo 2">
+        </div>
+        
+        <div class="photo-card">
+            <img src="Photo3.jpeg" alt="Gallery Photo 3">
+        </div>
+
+        <div class="photo-card">
+            <img src="Photo8.jpeg" alt="Gallery Photo 4">
+        </div>
+        
+        <div class="photo-card">
+            <img src="Photo5.jpeg" alt="Gallery Photo 5">
+        </div>
+        
+        <div class="photo-card">
+            <img src="Photo6.jpeg" alt="Gallery Photo 6">
+        </div>
+
+        <div class="photo-card">
+            <img src="Photo9.jpeg" alt="Gallery Photo 7">
+        </div>
+
+        <div class="photo-card">
+            <img src="Photo1.jpeg" alt="Gallery Photo 8">
+        </div>
+
+        <div class="photo-card">
+            <img src="Photo10.jpeg" alt="Gallery Photo 8">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Contact: slee18h@example.com</p>
+    </footer>
+
+</body>
+</html>
+
